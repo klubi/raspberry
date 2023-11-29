@@ -3,14 +3,16 @@
 - [Raspberry PI examples](#raspberry-pi-examples)
   - [Setup](#setup)
     - [Install micropython](#install-micropython)
-    - [VS Code](#vs-code)
+    - [VSCode](#vscode)
     - [Pipkin](#pipkin)
   - [Base Components](#base-components)
   - [Examples](#examples)
-    - [PIR motion sensor](#pir-motion-sensor)
+    - [2x16 LCD I2C](#2x16-lcd-i2c)
       - [Components](#components)
-    - [Onboard led](#onboard-led)
+    - [motion sensor](#motion-sensor)
       - [Components](#components-1)
+    - [onboard led](#onboard-led)
+      - [Components](#components-2)
 
 ## Setup
 
@@ -61,7 +63,30 @@ Vast majority of examples are built using breadboard, some jumper wires and with
 
 ## Examples
 
-### [PIR motion sensor](./motion_sensor/)
+### [2x16 LCD I2C](./2x16_lcd_i2c/)
+
+[This](./2x16_lcd_i2c/main.py) example uses `2x16 LCD` with `I2C` module already soldered in.
+
+> This example uses external libraries to communicate with display using I2C:
+>
+> - [python_lcd](https://github.com/dhylands/python_lcd)
+> - [RPI-PICO-I2C-LC](https://github.com/T-622/RPI-PICO-I2C-LCD)
+>
+> You will need two files from those repos:
+>
+> - [lcd_api](https://github.com/dhylands/python_lcd/blob/master/lcd/lcd_api.py)
+> - [pico_i2c_lcd](https://github.com/T-622/RPI-PICO-I2C-LCD/blob/main/pico_i2c_lcd.py)
+>
+> copy them over to your project, and make sure to also send it to board
+
+#### Components
+
+- [2x16 LCD - Amazon](https://amzn.to/3Rw1CTn)
+- [2x16 LCD - AliExpress](https://s.click.aliexpress.com/e/_DFjEm4n)
+
+---
+
+### [motion sensor](./motion_sensor/)
 
 [This](./motion_sensor/machine.py) example uses `HC-SR501` motion sensor.  
 [Second example](./motion_sensor/picozero.py) uses same sensor, but instead of relying only on micropython built in code, this one uses [picozero](https://picozero.readthedocs.io/en/latest/api.html) library.
@@ -71,7 +96,9 @@ Vast majority of examples are built using breadboard, some jumper wires and with
 - [HC-SR501 - Amazon](https://amzn.to/49VN6LF)
 - [HC-SR501 - AliExpress](https://s.click.aliexpress.com/e/_DdMvH6X)
 
-### [Onboard led](./onboard_led/)
+---
+
+### [onboard led](./onboard_led/)
 
 [This](./onboard_led/main.py) example uses `RP2040-Zero` onboard led (type `ws2812`).  
 [Second example](./onboard_led/with_button.py) additionally uses tactile switch (both `6x6 mm` and `12x12 mm` will to just fine).
