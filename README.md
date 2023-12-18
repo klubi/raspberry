@@ -13,6 +13,8 @@
       - [Components](#components-1)
     - [onboard led](#onboard-led)
       - [Components](#components-2)
+    - [SSD1306 OLED I2C](#ssd1306-oled-i2c)
+      - [Components](#components-3)
 
 ## Setup
 
@@ -109,3 +111,16 @@ Vast majority of examples are built using breadboard, some jumper wires and with
 - [6x6mm - AliExpress](https://s.click.aliexpress.com/e/_DDdD25t)
 - [12x12mm - Amazon](https://amzn.to/3uBck1R)
 - [12x12mm - AliExpress](https://s.click.aliexpress.com/e/_DBB46B5)
+
+### [SSD1306 OLED I2C](./ssd1306_oled/)
+
+[This](./ssd1306_oled/main.py) example uses `SSD1306` 128x32 OLED I2C display.
+
+> This example uses external library to communicate with display using I2C:
+>
+> - [ssd1306.py](https://www.hackster.io/diyprojectslab/how-to-use-an-oled-display-with-raspberry-pi-pico-d9d9cb)
+
+#### Components
+
+- [SSD1306 128x32 - Amazon](https://amzn.to/47aSBmV)
+- [SSD1306 128x32 - AliExpress](https://s.click.aliexpress.com/e/_DdGpOTj)
