@@ -51,6 +51,8 @@ pipkin install picozero
 
 > Affiliate link disclaimer!  
 > Links to components in examples are affiliate links. If you buy component using any of those, you won't pay more, but I'll get a cut, which will allow me to add more examples.
+> 
+> If you'd like to get some cashback for your purchases on either **Amazon** or **AliExpress** I recommend using [LetyShops](https://letyshops.com/pl-en/winwin?ww=31672103) for that.
 
 Vast majority of examples are built using breadboard, some jumper wires and wither RaspberryPi Pico W or RP2040-Zero.
 
@@ -124,3 +126,16 @@ Vast majority of examples are built using breadboard, some jumper wires and with
 
 - [SSD1306 128x32 - Amazon](https://amzn.to/47aSBmV)
 - [SSD1306 128x32 - AliExpress](https://s.click.aliexpress.com/e/_DdGpOTj)
+
+### [Mini RC522 RFID](./rc522_rfid/)
+
+[This](./rc522_rfid/readSerialNumber.py) example uses `Mini RC522` RFID module.
+
+> This example uses external library to communicate with RFID module:
+>
+> - [mfrc522.py](https://how2electronics.com/using-rc522-rfid-reader-module-with-raspberry-pi-pico/)
+
+#### Components
+
+- [RC522 - Amazon](https://amzn.to/41B9beJ)
+- [RC522 - AliExpress](https://s.click.aliexpress.com/e/_DBiCsVj)
